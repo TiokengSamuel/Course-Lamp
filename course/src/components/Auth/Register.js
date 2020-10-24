@@ -10,6 +10,9 @@ class Register extends React.Component {
                         <Icon name="puzzle piece" color="orange"/>
                         Register for CourseLamp
                     </Header>
+                    <Form size="large">
+                        
+                    </Form>
                 </Grid.Column>
             </Grid>
         )
