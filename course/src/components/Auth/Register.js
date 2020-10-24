@@ -22,7 +22,7 @@ class Register extends React.Component {
             return false;
         }else if (!this.isPasswordValid(this.state)){
             //throw error
-
+            error = { message: 'Password is invalid'}
         } else {
             //form valid
 
