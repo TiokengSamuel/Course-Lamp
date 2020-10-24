@@ -12,16 +12,30 @@ class Register extends React.Component {
     }
 
     isFormValid = () => {
-        if (this.isFormEmpty) {
+        let errors = [];
+        let
+
+        if (this.isFormEmpty(this.state)) {
+            //throw error
 
         }else if (!this.isPasswordValid()){
+            //throw error
 
         } else {
             //form valid
+
             return true;
         }
 
     }
+
+
+    isFormEmpty = ({username, email, password, password, passwordConfirmation}) => {
+        return !username.length || !email.length || !password.length ||
+        !passwordConfirmation.length;
+    }
+
+
 
 
     handleChange =  event => {
