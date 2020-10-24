@@ -42,6 +42,8 @@ class Register extends React.Component {
            return false;
        }else if (password !== passwordConfirmation) {
            return false;
+       }else {
+           return true;
        }
     }
 
