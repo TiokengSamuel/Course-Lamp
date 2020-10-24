@@ -5,7 +5,11 @@ class Register extends React.Component {
     render() {
         return (
             <Grid textAlign="center" verticalAlign="middle">
-                <Grid.Column></Grid.Column>
+                <Grid.Column style={{ maxWidth: 450}}>
+                    <Header as="h2" icon color="orange" textAlign="center">
+                        <Icon/>
+                    </Header>
+                </Grid.Column>
             </Grid>
         )
     }
