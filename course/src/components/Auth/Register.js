@@ -2,6 +2,9 @@ import React from 'react'
 import {Grid, Form, Segment, Button, Header, Message, Icon} from 'semantic-ui-react';
 
 class Register extends React.Component {
+    
+    handleChange = () => {}
+    
     render() {
         return (
             <Grid textAlign="center" verticalAlign="middle">
@@ -13,7 +16,7 @@ class Register extends React.Component {
                     <Form size="large">
                         <Segment stacked>
                             <Form.Input fluid name="username" icon="user" iconPosition="left"
-                            placeholder="Username" onChange={this.handleChange}/>
+                            placeholder="Username" onChange={this.handleChange} type="text"/>
                         </Segment>
                     </Form>
                 </Grid.Column>
