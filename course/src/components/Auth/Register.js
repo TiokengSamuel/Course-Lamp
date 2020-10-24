@@ -12,7 +12,8 @@ class Register extends React.Component {
                     </Header>
                     <Form size="large">
                         <Segment stacked>
-                            <Form.Input fluid name="username" />
+                            <Form.Input fluid name="username" icon="user" iconPosition="left"
+                            placeholder="Username" onChange={this.handleChange}/>
                         </Segment>
                     </Form>
                 </Grid.Column>
