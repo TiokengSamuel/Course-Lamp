@@ -20,7 +20,7 @@ class Register extends React.Component {
             error = { message: 'Fill in all fields'};
             this.setState({errors: errors.concat(error)});
             return false;
-        }else if (!this.isPasswordValid()){
+        }else if (!this.isPasswordValid(this.state)){
             //throw error
 
         } else {
@@ -36,6 +36,8 @@ class Register extends React.Component {
         return !username.length || !email.length || !password.length ||
         !passwordConfirmation.length;
     }
+
+    isPasswordValid = ({})
 
 
 
