@@ -1,5 +1,6 @@
 import React from 'react'
 import {Grid, Form, Segment, Button, Header, Message, Icon} from 'semantic-ui-react';
+import { Link } from 'react-router-dom'
 
 class Register extends React.Component {
     
@@ -37,7 +38,7 @@ class Register extends React.Component {
                             </Button>
                         </Segment>
                     </Form>
-                    <Message>Already a user?</Message>
+                    <Message>Already a user? <Link to="/login"></Link></Message>
                 </Grid.Column>
             </Grid>
         )
