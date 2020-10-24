@@ -4,6 +4,7 @@ import {Grid, Form, Segment, Button, Header, Message, Icon} from 'semantic-ui-re
 class Register extends React.Component {
     
     handleChange = () => {}
+    state = {}
     
     render() {
         return (
