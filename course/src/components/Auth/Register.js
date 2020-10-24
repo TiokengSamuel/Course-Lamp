@@ -25,6 +25,9 @@ class Register extends React.Component {
             .then(createdUser => {
                 console.log(createdUser)
             }) 
+            .catch(err => {
+                console.error(err);
+            });
     }
     
     
