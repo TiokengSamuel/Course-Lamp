@@ -50,7 +50,7 @@ class Register extends React.Component {
     }
 
 
-    displayError = errors => errors.map((error, i) => <p key={i}>{error.message}</p>);
+    displayErrors = errors => errors.map((error, i) => <p key={i}>{error.message}</p>);
 
 
     handleChange =  event => {
@@ -131,6 +131,7 @@ class Register extends React.Component {
                             </Button>
                         </Segment>
                     </Form>
+                    {this.state.errors.length > 0 &&}
                     <Message>Already a user? <Link to="/login">Login</Link></Message>
                 </Grid.Column>
             </Grid>
