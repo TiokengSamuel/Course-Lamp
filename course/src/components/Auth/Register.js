@@ -83,7 +83,7 @@ class Register extends React.Component {
                             value={passwordConfirmation}/>
                         
 
-                            <Button color="orange" fluid size="large">
+                            <Button color="orange" fluid size="large" onSubmit={this.handleSubmit}>
                                 Submit
                             </Button>
                         </Segment>
