@@ -4,7 +4,9 @@ import {Grid, Form, Segment, Button, Header, Message, Icon} from 'semantic-ui-re
 class Register extends React.Component {
     render() {
         return (
-            <div>Register</div>
+            <Grid>
+                
+            </Grid>
         )
     }
 }
