@@ -34,7 +34,7 @@ class Register extends React.Component {
     }
 
 
-    isFormEmpty = ({username, email, password, password, passwordConfirmation}) => {
+    isFormEmpty = ({username, email, password, passwordConfirmation}) => {
         return !username.length || !email.length || !password.length ||
         !passwordConfirmation.length;
     }
