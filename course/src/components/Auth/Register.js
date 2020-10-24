@@ -10,8 +10,14 @@ class Register extends React.Component {
         passwordConfirmation: ""
     }
 
+
     handleChange =  event => {
         this.setState({ [event.target.name]: event.target.value })
+    }
+
+
+    handleSubmit = event => {
+        event.preventDefault();
     }
     
     
@@ -26,7 +32,7 @@ class Register extends React.Component {
                         <Icon name="puzzle piece" color="orange"/>
                         Register for CourseLamp
                     </Header>
-                    <Form size="large">
+                    <Form size="large" onSubmit={this.handleSubmit} size="large">
                         <Segment stacked>
                             <Form.Input 
                             fluid name="username" 
