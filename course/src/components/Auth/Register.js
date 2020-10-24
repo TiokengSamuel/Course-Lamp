@@ -3,11 +3,11 @@ import {Grid, Form, Segment, Button, Header, Message, Icon} from 'semantic-ui-re
 import { Link } from 'react-router-dom'
 
 class Register extends React.Component {
-    
+    state = {}
     handleChange =  event => {
         this.setState({ })
     }
-    state = {}
+    
     
     render() {
         return (
