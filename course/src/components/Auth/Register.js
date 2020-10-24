@@ -18,7 +18,8 @@ class Register extends React.Component {
         if (this.isFormEmpty(this.state)) {
             //throw error
             error = { message: 'Fill in all fields'};
-            this.setState({errors})
+            this.setState({errors: errors.concat(error)});
+            return false;
         }else if (!this.isPasswordValid()){
             //throw error
 
