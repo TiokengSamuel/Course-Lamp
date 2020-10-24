@@ -1,4 +1,5 @@
 import React from 'react'
+import firebase from '../../Firebase'
 import {Grid, Form, Segment, Button, Header, Message, Icon} from 'semantic-ui-react';
 import { Link } from 'react-router-dom'
 
@@ -18,6 +19,12 @@ class Register extends React.Component {
 
     handleSubmit = event => {
         event.preventDefault();
+        firebase
+            .auth()
+            .createUserWithEmailAndPassword(this.state.email, this.state.password)
+            .then(createdUser => {
+                console.log()
+            }) 
     }
     
     
