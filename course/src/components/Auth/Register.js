@@ -50,6 +50,7 @@ class Register extends React.Component {
     }
 
 
+    displayError = errors => errors.map((error, i) => <p key={i}>{error.message}</p>);
 
 
     handleChange =  event => {
