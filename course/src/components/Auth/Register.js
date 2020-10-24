@@ -11,7 +11,9 @@ class Register extends React.Component {
                         Register for CourseLamp
                     </Header>
                     <Form size="large">
-                        
+                        <Segment stacked>
+                            <Form.Input fluid name="username" />
+                        </Segment>
                     </Form>
                 </Grid.Column>
             </Grid>
