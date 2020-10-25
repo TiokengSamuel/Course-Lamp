@@ -4,7 +4,7 @@ import { Grid } from 'semantic-ui-react'
 export default class UserPanel extends Component {
     render() {
         return (
-            <Grid>
+            <Grid style = {{}}>
                 
             </Grid>
         )
