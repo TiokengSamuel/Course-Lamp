@@ -3,7 +3,10 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
 
 export default class UserPanel extends Component {
     dropdownOptions = () => [
-        {}
+        {
+            text: <span>Signed in as <strong>User</strong></span>,
+            disabled: true
+        }
     ]
 
     render() {
