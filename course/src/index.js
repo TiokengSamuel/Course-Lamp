@@ -13,6 +13,7 @@ import { Provider, connect } from 'react-redux'
 import { composeWithDevTools, composewithDevTools } from 'redux-devtools-extension'
 import rootReducer from './reducers';
 import { setUser } from './actions'
+import { Spinner } from './Spinner'
 
 const store = createStore(rootReducer, composeWithDevTools())
 
