@@ -10,9 +10,8 @@ export default class SidePanel extends Component {
                 fixed="left"
                 vertical
                 style={{ background: '#4c3c4c', fontSize: '1.2rem' }}
-            >
+            />
 
-            </Menu>
         )
     }
 }
