@@ -8,7 +8,7 @@ export default class UserPanel extends Component {
                 <Grid.Column>
                     <Grid.Row style={{ padding: '1.2em', margin:0 }}>
                         <Header>
-                            
+                            <Header.Content>Course Lamp</Header.Content>
                         </Header>
                     </Grid.Row>
                 </Grid.Column>
