@@ -6,6 +6,12 @@ export default class UserPanel extends Component {
         {
             text: <span>Signed in as <strong>User</strong></span>,
             disabled: true
+        },
+        {
+            text: <span>Change Avatar</span>
+        },
+        {
+            text: <span>Sign Out</span>
         }
     ]
 
