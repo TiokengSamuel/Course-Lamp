@@ -8,7 +8,7 @@ import Register from './components/Auth/Register';
 import 'semantic-ui-css/semantic.min.css';
 import firebase from './Firebase'
 
-const Root = () => (
+class Root extends React.Component (
     <Router>
         <Switch>
             <Route exact path="/" component={App}/>
