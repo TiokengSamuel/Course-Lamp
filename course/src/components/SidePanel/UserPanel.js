@@ -6,10 +6,10 @@ export default class UserPanel extends Component {
         return (
             <Grid style = {{ background: '#4c3c4c'}}>
                 <Grid.Column>
-                    <Grid.Row style={{ padding: '0.5em', margin:0 }}>
+                    <Grid.Row style={{ padding: '0.7em', margin:0 }}>
                         <Header inverted floated="left" as="h2">
                             <Icon name="lightbulb outline"/>
-                            <Header.Content>Course Lamp</Header.Content>
+                            <Header.Content>CourseLamp</Header.Content>
                         </Header>
                     </Grid.Row>
                 </Grid.Column>
