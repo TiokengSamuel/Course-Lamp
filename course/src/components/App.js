@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
+import { Grid } from 'semantic-ui-react'
 
-const App = () => (
-  
+export const App = () => (
+  <Grid>
+    
+  </Grid>
 )
 
-export default App;
+
