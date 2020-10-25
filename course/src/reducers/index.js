@@ -3,9 +3,10 @@ import * as actionTypes from '../actions/types'
 
 const user_reducer = (state, action) => {
     switch (action.type) {
-        case actionTypes.SET_USER;
+        case actionTypes.SET_USER:
         return {
-            curr
+            currentUser: action.payload.currentUser,
+            isLoading: false
         }
     }
 }
