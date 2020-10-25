@@ -7,8 +7,12 @@ import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import 'semantic-ui-css/semantic.min.css';
 import firebase from './Firebase'
-import { createStore } from 'redux';
 
+import { createStore } from 'redux';
+import { Provider } from 'react-redux'
+import { composeWithDevTools, composewithDevTools } from 'redux-devtools-extension'
+
+const store = createStore(() => {}, composeWithDevTools())
 
 class Root extends React.Component {
     componentDidMount() {
