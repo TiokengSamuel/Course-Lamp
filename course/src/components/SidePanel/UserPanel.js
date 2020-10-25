@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Header, Icon } from 'semantic-ui-react'
+import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
 
 export default class UserPanel extends Component {
     render() {
@@ -12,6 +12,10 @@ export default class UserPanel extends Component {
                             <Header.Content>CourseLamp</Header.Content>
                         </Header>
                     </Grid.Row>
+
+                    <Header style={{ padding: '0.25em' }} as="h4" inverted>
+                        <Dropdown trigger={}/>
+                    </Header>
                 </Grid.Column>
             </Grid>
         )
