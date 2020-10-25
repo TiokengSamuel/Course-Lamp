@@ -69,7 +69,8 @@ class Register extends React.Component {
             .createUserWithEmailAndPassword(this.state.email, this.state.password)
             .then(createdUser => {
                 console.log(createdUser)
-                this.setState({ loading: false })
+                create
+                //this.setState({ loading: false })
             }) 
             .catch(err => {
                 console.error(err);
