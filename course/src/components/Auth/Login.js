@@ -97,7 +97,7 @@ class Login extends React.Component {
                             {this.displayErrors(errors)}
                         </Message>
                     )}
-                    <Message>Don't have an account<Link to="/register">Register</Link></Message>
+                    <Message>Don't have an account? <Link to="/register">Register</Link></Message>
                 </Grid.Column>
             </Grid>
         )
