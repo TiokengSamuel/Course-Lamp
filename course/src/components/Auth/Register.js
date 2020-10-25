@@ -92,6 +92,9 @@ class Register extends React.Component {
         }
     }
 
+    
+
+
     handleInputError = (errors, inputName) => {
         return errors.some(error => 
                                 
