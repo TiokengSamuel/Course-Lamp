@@ -94,7 +94,7 @@ class Register extends React.Component {
     }
 
     saveUser = createdUser => {
-        return this.state.usersRef
+        return this.state.usersRef.child(createdUser)
     }
 
 
