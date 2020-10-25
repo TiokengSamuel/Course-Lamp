@@ -1,3 +1,4 @@
+import { combineReducers } from 'redux';
 import * as actionTypes from '../actions/types'
 
 const initialUserState = {
@@ -17,3 +18,5 @@ const user_reducer = (state = initialUserState, action) => {
         return state;
     }
 }
+
+const rootReducer = 
