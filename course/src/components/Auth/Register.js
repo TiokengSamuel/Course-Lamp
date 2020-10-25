@@ -117,7 +117,7 @@ class Register extends React.Component {
                             onChange={this.handleChange} 
                             type="email"
                             value={email}
-                            className={errors.some(error => error.message.toLowerCase())}
+                            className={errors.some(error => error.message.toLowerCase().includes('email')) ? 'error'}
                             />
 
 
