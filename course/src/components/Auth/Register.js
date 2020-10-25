@@ -93,7 +93,7 @@ class Register extends React.Component {
     }
 
     saveUser = createdUser => {
-        return
+        return this.state.usersRef
     }
 
 
