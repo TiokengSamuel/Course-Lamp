@@ -11,7 +11,8 @@ class Register extends React.Component {
         password: "",
         passwordConfirmation: "",
         errors: [],
-        loading: false
+        loading: false,
+        usersRef: firebase.database().ref('users')
     }
 
     isFormValid = () => {
