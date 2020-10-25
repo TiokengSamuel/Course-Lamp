@@ -37,7 +37,7 @@ class Root extends React.Component {
                     <Route path="/register" component={Register}/>
                 </Switch>
             
-        )
+        );
     }
 } 
 
