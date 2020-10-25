@@ -79,7 +79,13 @@ class Register extends React.Component {
     }
 
     handleInputError = (errors, inputName) => {
-
+        errors.some(error => 
+                                
+            error.message.toLowerCase().includes('email')
+        ) 
+            
+            ? 'error'
+            : ""
     }
     
     
@@ -121,7 +127,7 @@ class Register extends React.Component {
                             onChange={this.handleChange} 
                             type="email"
                             value={email}
-                            className={this.handleInputError(errors, '')
+                            className={this.handleInputError(errors, 'email')
                             }
                             />
 
