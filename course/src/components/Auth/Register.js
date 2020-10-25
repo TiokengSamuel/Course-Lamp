@@ -92,7 +92,9 @@ class Register extends React.Component {
         }
     }
 
-    
+    saveUser = createdUser => {
+        return
+    }
 
 
     handleInputError = (errors, inputName) => {
