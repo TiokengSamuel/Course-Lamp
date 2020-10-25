@@ -26,30 +26,7 @@ class Login extends React.Component {
         event.preventDefault();
         if(this.isFormValid()) {
         this.setState({ errors: [], loading: true})
-        firebase
-            .auth()
-            .createUserWithEmailAndPassword(this.state.email, this.state.password)
-            .then(createdUser => {
-                console.log(createdUser)
-                createdUser.user.updateProfile({
-                    displayName: this.state.username,
-                    photoURL: `http://gravatar.com/avatar/${md5(createdUser.user.email)}?d=identicon`
-                })
-                .then(() => {
-                    this.saveUser(createdUser).then(() => {
-                        console.log('user saved');
-                })
-                })
-                .catch(err => {
-                    console.error(err);
-                    this.setState({ errors: this.state.errors.concat(err), loading: false});
-                })
-                //
-            }) 
-            .catch(err => {
-                console.error(err);
-                this.setState({ errors: this.state.errors.concat(err), loading: false});
-            });
+        
         }
     }
 
