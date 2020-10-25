@@ -77,6 +77,10 @@ class Register extends React.Component {
             });
         }
     }
+
+    handleInputError = (errors, inputName) => {
+        
+    }
     
     
     render() {
