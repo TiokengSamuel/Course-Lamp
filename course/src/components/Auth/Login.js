@@ -86,20 +86,7 @@ class Login extends React.Component {
                             className={this.handleInputError(errors, 'password')}
                             />
 
-
-                            <Form.Input 
-                            fluid name="passwordConfirmation" 
-                            icon="repeat" 
-                            iconPosition="left"
-                            placeholder="Password Confirmation" 
-                            onChange={this.handleChange} 
-                            type="password"
-                            value={passwordConfirmation}
-                            className={this.handleInputError(errors, 'password')}
-                            />
-                        
-
-                            <Button disabled={loading} className={loading ? 'loading' : ''} color="orange" fluid size="large" onSubmit={this.handleSubmit}>
+                            <Button disabled={loading} className={loading ? 'loading' : ''} color="violet" fluid size="large" onSubmit={this.handleSubmit}>
                                 Submit
                             </Button>
                         </Segment>
@@ -110,7 +97,7 @@ class Login extends React.Component {
                             {this.displayErrors(errors)}
                         </Message>
                     )}
-                    <Message>Already a user? <Link to="/login">Login</Link></Message>
+                    <Message>Don't have an account<Link to="/register">Register</Link></Message>
                 </Grid.Column>
             </Grid>
         )
