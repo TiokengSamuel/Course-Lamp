@@ -69,7 +69,10 @@ class Register extends React.Component {
             .createUserWithEmailAndPassword(this.state.email, this.state.password)
             .then(createdUser => {
                 console.log(createdUser)
-                create
+                createdUser.user.updateProfile({
+                    displayName: this.state.username,
+                    photoURL: `http://gravatar.com/avatar/${}`
+                })
                 //this.setState({ loading: false })
             }) 
             .catch(err => {
