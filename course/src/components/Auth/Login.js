@@ -9,8 +9,7 @@ class Login extends React.Component {
         email: "",
         password: "",
         errors: [],
-        loading: false,
-        usersRef: firebase.database().ref('users')
+        loading: false
     }
 
     isFormValid = () => {
