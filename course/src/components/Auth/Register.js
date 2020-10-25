@@ -130,7 +130,7 @@ class Register extends React.Component {
                         <Icon name="puzzle piece" color="orange"/>
                         Register for CourseLamp
                     </Header>
-                    <Form size="large" onSubmit={this.handleSubmit} size="large">
+                    <Form onSubmit={this.handleSubmit} size="large">
                         <Segment stacked>
                             <Form.Input 
                             fluid name="username" 
