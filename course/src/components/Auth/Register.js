@@ -131,10 +131,10 @@ class Register extends React.Component {
                             </Button>
                         </Segment>
                     </Form>
-                    {errors.length > 0 && (
+                    {this.state.errors.length > 0 && (
                         <Message error>
                             <h3>Error</h3>
-                            {this.displayErrors(errors)}
+                            {this.displayErrors(this.state.errors)}
                         </Message>
                     )}
                     <Message>Already a user? <Link to="/login">Login</Link></Message>
