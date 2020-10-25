@@ -14,7 +14,9 @@ export default class UserPanel extends Component {
                     </Grid.Row>
 
                     <Header style={{ padding: '0.25em' }} as="h4" inverted>
-                        <Dropdown trigger={}/>
+                        <Dropdown trigger={
+                            <span>User</span>
+                        } options={this.dropdownOptions()}/>
                     </Header>
                 </Grid.Column>
             </Grid>
