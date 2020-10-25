@@ -9,7 +9,9 @@ import 'semantic-ui-css/semantic.min.css';
 import firebase from './Firebase'
 
 class Root extends React.Component {
-    
+    render() {
+        
+    }
 } 
 (
     <Router>
