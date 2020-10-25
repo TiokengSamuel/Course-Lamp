@@ -11,6 +11,7 @@ import firebase from './Firebase'
 import { createStore } from 'redux';
 import { Provider } from 'react-redux'
 import { composeWithDevTools, composewithDevTools } from 'redux-devtools-extension'
+import rootReducer from './reducers';
 
 const store = createStore(rootReducer, composeWithDevTools())
 
