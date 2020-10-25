@@ -11,7 +11,9 @@ import firebase from './Firebase'
 class Root extends React.Component {
     conponentDidMoutn() {
         firebase.auth().onAuthStateChanged(user => {
-        
+            if (user) {
+                
+            }
         })
     }
 
