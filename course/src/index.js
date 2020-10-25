@@ -10,7 +10,7 @@ import firebase from './Firebase'
 
 class Root extends React.Component {
     render() {
-        (
+       return (
             <Router>
                 <Switch>
                     <Route exact path="/" component={App}/>
