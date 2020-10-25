@@ -8,7 +8,8 @@ class Register extends React.Component {
         username: "",
         email: "",
         password: "",
-        passwordConfirmation: ""
+        passwordConfirmation: "",
+        errors: []
     }
 
     isFormValid = () => {
