@@ -77,6 +77,10 @@ class Register extends React.Component {
                 .then(() => {
                     this.setState({ loading: false })
                 })
+                .catch(err => {
+                    console.error(err);
+                    this.setState({ errors: this.state.errors.concat(err), loading: false});
+                })
                 //
             }) 
             .catch(err => {
