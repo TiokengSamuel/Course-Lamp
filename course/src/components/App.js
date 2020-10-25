@@ -6,10 +6,13 @@ import MetaPanel from './MetaPanel/MetaPanel';
 import SidePanel from './SidePanel/SidePanel';
 
 export const App = () => (
-  <Grid>
+  <Grid columns="equal" className="app" style={{ background: '#eee' }}>
     <ColorPanel/>
     <SidePanel/>
-    <Messages/>
+    <Grid.Column>
+      <Messages/>
+    </Grid.Column>
+    
     <MetaPanel/>
   </Grid>
 )
