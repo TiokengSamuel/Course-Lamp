@@ -116,7 +116,9 @@ class Register extends React.Component {
                             placeholder="Username" 
                             onChange={this.handleChange} 
                             type="text"
-                            value={username}/>
+                            value={username}
+                            className={this.handleInputError(errors, 'username')}
+                            />
 
 
                             <Form.Input 
@@ -150,7 +152,9 @@ class Register extends React.Component {
                             placeholder="Password Confirmation" 
                             onChange={this.handleChange} 
                             type="password"
-                            value={passwordConfirmation}/>
+                            value={passwordConfirmation}
+                            className={this.handleInputError(errors, 'passwordConfirmation')}
+                            />
                         
 
                             <Button disabled={loading} className={loading ? 'loading' : ''} color="orange" fluid size="large" onSubmit={this.handleSubmit}>
