@@ -38,6 +38,9 @@ class Root extends React.Component {
     }
 } 
 
+const mapStateFromProps = state => ({
+    
+})
 
 const RootWithAuth = withRouter(
     connect(
