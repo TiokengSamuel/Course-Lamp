@@ -13,7 +13,7 @@ export default class UserPanel extends Component {
             text: <span>Change Avatar</span>
         },
         {
-            key
+            key: 'signout',
             text: <span>Sign Out</span>
         }
     ]
