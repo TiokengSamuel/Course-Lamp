@@ -9,7 +9,7 @@ import 'semantic-ui-css/semantic.min.css';
 import firebase from './Firebase'
 
 class Root extends React.Component {
-    conponentDidMoutn() {
+    conponentDidMount() {
         firebase.auth().onAuthStateChanged(user => {
             if (user) {
                 this.props.history.push('/');
