@@ -153,7 +153,7 @@ class Register extends React.Component {
                             onChange={this.handleChange} 
                             type="password"
                             value={passwordConfirmation}
-                            className={this.handleInputError(errors, 'passwordConfirmation')}
+                            className={this.handleInputError(errors, 'password')}
                             />
                         
 
