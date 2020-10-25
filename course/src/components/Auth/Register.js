@@ -73,7 +73,7 @@ class Register extends React.Component {
             }) 
             .catch(err => {
                 console.error(err);
-                this.setState({ errors: this.state.errors.concat(err), loading: false})
+                this.setState({ errors: this.state.errors.concat(err), loading: false});
             });
         }
     }
@@ -81,7 +81,14 @@ class Register extends React.Component {
     
     render() {
 
-        const { username, email, password, passwordConfirmation, errors } = this.state;
+        const { 
+            username, 
+            email, 
+            password, 
+            passwordConfirmation, 
+            errors,
+            loading
+        } = this.state;
 
         return (
             <Grid textAlign="center" verticalAlign="middle" className="app">
