@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid } from 'semantic-ui-react'
+import { Grid, Header } from 'semantic-ui-react'
 
 export default class UserPanel extends Component {
     render() {
@@ -7,7 +7,9 @@ export default class UserPanel extends Component {
             <Grid style = {{ background: '#4c3c4c'}}>
                 <Grid.Column>
                     <Grid.Row style={{ padding: '1.2em', margin:0 }}>
-
+                        <Header>
+                            
+                        </Header>
                     </Grid.Row>
                 </Grid.Column>
             </Grid>
