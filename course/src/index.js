@@ -41,7 +41,7 @@ class Root extends React.Component {
 
 const RootWithAuth = withRouter(
     connect(
-        mapState,
+        mapStateFromProps,
          { setUser })
     (Root));
 
