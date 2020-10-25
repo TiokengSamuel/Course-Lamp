@@ -10,18 +10,18 @@ import firebase from './Firebase'
 
 class Root extends React.Component {
     render() {
-        
+        (
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={App}/>
+                    <Route path="/login" component={Login}/>
+                    <Route path="/register" component={Register}/>
+                </Switch>
+            </Router>
+        )
     }
 } 
-(
-    <Router>
-        <Switch>
-            <Route exact path="/" component={App}/>
-            <Route path="/login" component={Login}/>
-            <Route path="/register" component={Register}/>
-        </Switch>
-    </Router>
-)
+
 
 ReactDOM.render(<Root />, document.getElementById('root'));
 registerServiceWorker();
