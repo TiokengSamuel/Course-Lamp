@@ -33,5 +33,10 @@ class Root extends React.Component {
 
 const RootWithAuth = withRouter(Root);
 
-ReactDOM.render(<Root />, document.getElementById('root'));
+ReactDOM.render(
+    <Router>
+        <RootWithAuth/>
+    </Router>,
+
+document.getElementById('root'));
 registerServiceWorker();
