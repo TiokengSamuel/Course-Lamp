@@ -60,8 +60,9 @@ class Register extends React.Component {
 
 
     handleSubmit = event => {
-        if(this.isFormValid()) {
         event.preventDefault();
+        if(this.isFormValid()) {
+        this.setState({ errors: [], loading: true})
         firebase
             .auth()
             .createUserWithEmailAndPassword(this.state.email, this.state.password)
