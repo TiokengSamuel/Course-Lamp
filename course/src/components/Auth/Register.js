@@ -138,7 +138,7 @@ class Register extends React.Component {
                             value={passwordConfirmation}/>
                         
 
-                            <Button color="orange" fluid size="large" onSubmit={this.handleSubmit}>
+                            <Button disabled={loading} className={loading ? 'loading' : ''} color="orange" fluid size="large" onSubmit={this.handleSubmit}>
                                 Submit
                             </Button>
                         </Segment>
