@@ -3,12 +3,11 @@ import firebase from '../../Firebase'
 import {Grid, Form, Segment, Button, Header, Message, Icon} from 'semantic-ui-react';
 import { Link } from 'react-router-dom'
 
-class Register extends React.Component {
+class Login extends React.Component {
     state = {
-        username: "",
+        
         email: "",
         password: "",
-        passwordConfirmation: "",
         errors: [],
         loading: false,
         usersRef: firebase.database().ref('users')
