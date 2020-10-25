@@ -9,7 +9,8 @@ class Register extends React.Component {
         email: "",
         password: "",
         passwordConfirmation: "",
-        errors: []
+        errors: [],
+        loading: false
     }
 
     isFormValid = () => {
@@ -68,6 +69,7 @@ class Register extends React.Component {
             .createUserWithEmailAndPassword(this.state.email, this.state.password)
             .then(createdUser => {
                 console.log(createdUser)
+                this.setState({ loading: false })
             }) 
             .catch(err => {
                 console.error(err);
