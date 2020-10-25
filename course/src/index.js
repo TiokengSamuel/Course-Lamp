@@ -39,7 +39,7 @@ class Root extends React.Component {
 const RootWithAuth = withRouter(Root);
 
 ReactDOM.render(
-<Provider>
+<Provider store = {store}>
 <Router>
     <RootWithAuth/>
 </Router>
