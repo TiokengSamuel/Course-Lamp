@@ -20,5 +20,7 @@ const user_reducer = (state = initialUserState, action) => {
 }
 
 const rootReducer = combineReducers({
-    user: user
+    user: user_reducer
 })
+
+export default rootReducer;

@@ -12,7 +12,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux'
 import { composeWithDevTools, composewithDevTools } from 'redux-devtools-extension'
 
-const store = createStore(() => {}, composeWithDevTools())
+const store = createStore(rootReducer, composeWithDevTools())
 
 class Root extends React.Component {
     componentDidMount() {
