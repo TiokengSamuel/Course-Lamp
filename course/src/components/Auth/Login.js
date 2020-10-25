@@ -34,6 +34,11 @@ class Login extends React.Component {
             })
             .catch(err => {
                 console.error(err);
+                this.setState({
+                    errors: this.state.error.concat(err),
+                    loading: false
+                })
+
             })
         
         }
