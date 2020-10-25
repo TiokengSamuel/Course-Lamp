@@ -8,5 +8,8 @@ const user_reducer = (state, action) => {
             currentUser: action.payload.currentUser,
             isLoading: false
         }
+    
+    default:
+        return state;
     }
 }
