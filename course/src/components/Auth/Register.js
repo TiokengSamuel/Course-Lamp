@@ -121,7 +121,7 @@ class Register extends React.Component {
                             onChange={this.handleChange} 
                             type="email"
                             value={email}
-                            className={
+                            className={this.handleInputError(errors, '')
                             }
                             />
 
