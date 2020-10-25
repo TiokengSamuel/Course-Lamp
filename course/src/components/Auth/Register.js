@@ -75,7 +75,9 @@ class Register extends React.Component {
                     photoURL: `http://gravatar.com/avatar/${md5(createdUser.user.email)}?d=identicon`
                 })
                 .then(() => {
-                    this.saveUser(createdUser).
+                    this.saveUser(createdUser).then(() => {
+                        console.log('user saved');
+                })
                 })
                 .catch(err => {
                     console.error(err);
