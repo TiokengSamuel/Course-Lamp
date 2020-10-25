@@ -30,12 +30,6 @@ class Login extends React.Component {
         }
     }
 
-    saveUser = createdUser => {
-        return this.state.usersRef.child(createdUser.user.uid).set({
-            name: createdUser.user.displayName,
-            avatar: createdUser.user.photoURL
-        })
-    }
 
 
     handleInputError = (errors, inputName) => {
@@ -52,10 +46,9 @@ class Login extends React.Component {
     render() {
 
         const { 
-            username, 
+            
             email, 
             password, 
-            passwordConfirmation, 
             errors,
             loading
         } = this.state;
