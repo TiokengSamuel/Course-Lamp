@@ -62,18 +62,7 @@ class Login extends React.Component {
                     </Header>
                     <Form onSubmit={this.handleSubmit} size="large">
                         <Segment stacked>
-                            <Form.Input 
-                            fluid name="username" 
-                            icon="user" 
-                            iconPosition="left"
-                            placeholder="Username" 
-                            onChange={this.handleChange} 
-                            type="text"
-                            value={username}
-                            className={this.handleInputError(errors, 'username')}
-                            />
-
-
+                           
                             <Form.Input 
                             fluid name="email" 
                             icon="mail" 
