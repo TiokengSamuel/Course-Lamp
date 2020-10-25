@@ -12,44 +12,7 @@ class Login extends React.Component {
         loading: false
     }
 
-    isFormValid = () => {
-        let errors = [];
-        let error;
-
-        if (this.isFormEmpty(this.state)) {
-            //throw error
-            error = { message: 'Fill in all fields'};
-            this.setState({errors: errors.concat(error)});
-            return false;
-        }else if (!this.isPasswordValid(this.state)){
-            //throw error
-            error = { message: 'Password is invalid'};
-            this.setState({ errors: errors.concat(error)});
-            return false;
-        } else {
-            //form valid
-
-            return true;
-        }
-
-    }
-
-
-    isFormEmpty = ({username, email, password, passwordConfirmation}) => {
-        return !username.length || !email.length || !password.length ||
-        !passwordConfirmation.length;
-    }
-
-    isPasswordValid = ({password, passwordConfirmation}) => {
-       if(password.length <  6 || passwordConfirmation.length < 6) {
-           return false;
-       }else if (password !== passwordConfirmation) {
-           return false;
-       }else {
-           return true;
-       }
-    }
-
+    
 
     displayErrors = errors => errors.map((error, i) => <p key={i}>{error.message}</p>);
 
