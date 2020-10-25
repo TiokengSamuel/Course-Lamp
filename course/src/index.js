@@ -37,7 +37,7 @@ class Root extends React.Component {
 } 
 
 
-const RootWithAuth = withRouter(Root);
+const RootWithAuth = withRouter(connect(null, { setUser })(Root));
 
 ReactDOM.render(
 <Provider store = {store}>
