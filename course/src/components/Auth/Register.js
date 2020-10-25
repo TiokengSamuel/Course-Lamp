@@ -79,7 +79,7 @@ class Register extends React.Component {
     }
 
     handleInputError = (errors, inputName) => {
-        errors.some(error => 
+        return errors.some(error => 
                                 
             error.message.toLowerCase().includes('email')
         ) 
