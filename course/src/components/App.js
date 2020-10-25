@@ -9,7 +9,7 @@ export const App = () => (
   <Grid columns="equal" className="app" style={{ background: '#eee' }}>
     <ColorPanel/>
     <SidePanel/>
-    <Grid.Column>
+    <Grid.Column style={{ marginLeft: 320 }}>
       <Messages/>
     </Grid.Column>
     
