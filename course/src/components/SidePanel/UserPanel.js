@@ -5,7 +5,11 @@ export default class UserPanel extends Component {
     render() {
         return (
             <Grid style = {{ background: '#4c3c4c'}}>
-                
+                <Grid.Column>
+                    <Grid.Row>
+                        
+                    </Grid.Row>
+                </Grid.Column>
             </Grid>
         )
     }
