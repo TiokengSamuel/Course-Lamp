@@ -51,7 +51,7 @@ const mapStateFromProps = state => ({
 const RootWithAuth = withRouter(
     connect(
         mapStateFromProps,
-         { setUser })
+         { setUser, clearUser })
     (Root));
 
 ReactDOM.render(
