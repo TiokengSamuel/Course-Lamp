@@ -49,7 +49,7 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
     }
 }
  const mapStateToProps = state => ({
-     user: user_reducer
+     currentUser: state.user.current
  })
 
 export default connect(mapStateToProps)(UserPanel);
