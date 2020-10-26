@@ -19,7 +19,7 @@ export default class UserPanel extends Component {
     ];
 
     handleSignout = () => {
-        
+        firebase
     }
 
     render() {
