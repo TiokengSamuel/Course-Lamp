@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import firebase from '../../Firebase'
-import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
+import { Dropdown, Grid, Header, Icon, Image } from 'semantic-ui-react'
 
  class UserPanel extends Component {
 
@@ -49,7 +49,7 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
                         <Dropdown 
                         trigger={
                             <span>
-                                <Image src={user.photo.URL} spaced="right"/>
+                                <Image src={user.photo.URL} spaced="right" avatar />
                                 {this.state.user.displayName}</span>
                         } options={this.dropdownOptions()}/>
                     </Header>
