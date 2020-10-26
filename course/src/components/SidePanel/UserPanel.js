@@ -16,7 +16,11 @@ export default class UserPanel extends Component {
             key: 'signout',
             text: <span onClick={this.handleSignout}>Sign Out</span>
         }
-    ]
+    ];
+
+    handleSignout = () => {
+        
+    }
 
     render() {
         return (
