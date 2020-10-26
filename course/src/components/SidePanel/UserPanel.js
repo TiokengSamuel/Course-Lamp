@@ -35,6 +35,8 @@ import { Dropdown, Grid, Header, Icon, Image } from 'semantic-ui-react'
 
     render() {
         
+        const { user } = this.state;
+
         return (
             <Grid style = {{ background: '#4c3c4c'}}>
                 <Grid.Column>
@@ -50,7 +52,7 @@ import { Dropdown, Grid, Header, Icon, Image } from 'semantic-ui-react'
                         trigger={
                             <span>
                                 <Image src={user.photoURL} spaced="right" avatar />
-                                {this.state.user.displayName}</span>
+                                {user.displayName}</span>
                         } options={this.dropdownOptions()}/>
                     </Header>
                 </Grid.Column>
