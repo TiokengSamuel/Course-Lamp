@@ -49,7 +49,7 @@ import { Dropdown, Grid, Header, Icon, Image } from 'semantic-ui-react'
                         <Dropdown 
                         trigger={
                             <span>
-                                <Image src={user.photo.URL} spaced="right" avatar />
+                                <Image src={this.state.user.photo.URL} spaced="right" avatar />
                                 {this.state.user.displayName}</span>
                         } options={this.dropdownOptions()}/>
                     </Header>
