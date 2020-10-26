@@ -58,5 +58,5 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
 }
  
 
-export default connect(mapStateToProps)(UserPanel);
+export default UserPanel;
 
