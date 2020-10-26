@@ -10,7 +10,7 @@ export const setUser = user => {
     }
 }
 
-export const clearUser = () => {
+ export const clearUser = () => {
     return {
         type: actionTypes.CLEAR_USER
     }
