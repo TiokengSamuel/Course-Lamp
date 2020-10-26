@@ -14,7 +14,7 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
     dropdownOptions = () => [
         {
             key: "user",
-            text: <span>Signed in as <strong>User</strong></span>,
+            text: <span>Signed in as <strong>{ this.state.user.displayName }</strong></span>,
             disabled: true
         },
         {
@@ -48,7 +48,7 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
 
                     <Header style={{ padding: '0.25em' }} as="h4" inverted>
                         <Dropdown trigger={
-                            <span>User</span>
+                            <span>{this.state.user.displayName}r</span>
                         } options={this.dropdownOptions()}/>
                     </Header>
                 </Grid.Column>
