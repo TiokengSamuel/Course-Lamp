@@ -16,7 +16,7 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
     dropdownOptions = () => [
         {
             key: "user",
-            text: <span>Signed in as <strong>{this.state.user.displayName}</strong></span>,
+            text: <span>Signed in as <strong>{this.state.user && this.state.user.displayName}</strong></span>,
             disabled: true
         },
         {
