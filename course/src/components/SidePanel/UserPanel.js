@@ -5,7 +5,7 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
  class UserPanel extends Component {
 
     state = {
-        user = this.props.currentUser
+        user : this.props.currentUser
     }
 
 
