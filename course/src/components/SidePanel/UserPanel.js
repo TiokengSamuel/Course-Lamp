@@ -56,9 +56,7 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
         )
     }
 }
- const mapStateToProps = state => ({
-     currentUser: state.user.current
- })
+ 
 
 export default connect(mapStateToProps)(UserPanel);
 
