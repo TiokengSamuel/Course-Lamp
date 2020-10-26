@@ -48,7 +48,7 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
         )
     }
 }
- const mapStateToProps = state => ({
+ const mapStateToProps = ({ user }) => ({
      currentUser: state.user.current
  })
 
