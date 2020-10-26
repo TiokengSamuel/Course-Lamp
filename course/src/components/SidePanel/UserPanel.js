@@ -10,6 +10,10 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
     }
 
 
+    componentWillReceiveProps(nextProps) {
+        this.setState({ user: nextProps.currentUser })
+    }
+
 
     dropdownOptions = () => [
         {
