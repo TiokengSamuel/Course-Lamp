@@ -6,7 +6,11 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
  class UserPanel extends Component {
 
     state = {
-        user= null;
+        user = null
+    }
+
+    componenetDidMount() {
+        
     }
 
     dropdownOptions = () => [
