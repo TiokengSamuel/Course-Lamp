@@ -5,6 +5,7 @@ import Messages from './Messages/Messages';
 import MetaPanel from './MetaPanel/MetaPanel';
 import SidePanel from './SidePanel/SidePanel';
 import './App.css'
+import { connect } from 'react-redux'
 
 const App = () => (
   <Grid columns="equal" className="app" style={{ background: '#eee' }}>
