@@ -4,6 +4,11 @@ import { connect } from 'react-redux'
 import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
 
  class UserPanel extends Component {
+
+    state = {
+        
+    }
+
     dropdownOptions = () => [
         {
             key: "user",
@@ -28,7 +33,7 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
     }
 
     render() {
-        console.log(this.props.currentUser)
+        console.log(this.props.currentUser);
         return (
             <Grid style = {{ background: '#4c3c4c'}}>
                 <Grid.Column>
