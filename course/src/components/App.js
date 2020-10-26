@@ -23,6 +23,6 @@ const App = () => (
   </Grid>
 )
 
-export default App;
+export default connect(mapState)(App);
 
 
