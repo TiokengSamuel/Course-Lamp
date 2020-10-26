@@ -10,7 +10,7 @@ import { Dropdown, Grid, Header, Icon } from 'semantic-ui-react'
     }
 
     componenetDidMount() {
-        
+        this.setState({ user: this.props.currentUser})
     }
 
     dropdownOptions = () => [
