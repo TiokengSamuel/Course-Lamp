@@ -23,6 +23,10 @@ const App = () => (
   </Grid>
 )
 
+const mapStateToProps = state => ({
+  currentUser: state.user.currentUser
+})
+
 export default connect(mapState)(App);
 
 
