@@ -6,6 +6,8 @@ export default class Channels extends Component {
         channels: [],
         modal: false
     }
+
+    closeModal = () => this.setState({ modal: false})
     
 
     render() {
