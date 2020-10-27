@@ -20,6 +20,10 @@ export default class Channels extends Component {
                     ({ channels.length }) <Icon name="add"/>
                 </Menu.Item>
             </Menu.Menu>
+
+            <Modal basic open={}>
+
+            </Modal>
         )
     }
 }
