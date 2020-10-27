@@ -7,7 +7,7 @@ export default class Channels extends Component {
         modal: false
     }
 
-    closeModal = () => this.setState({ modal: false})
+    closeModal = () => this.setState({ modal: false});
     
 
     render() {
