@@ -11,7 +11,7 @@ export default class Channels extends Component {
         const { channels } = this.state;
 
         return (
-            <Menu.Menu style={{ paddingBottom }}>
+            <Menu.Menu style={{ paddingBottom: '2em' }}>
                 <Menu.Item>
                     <span>
                         <Icon name="exchange"/> CHANNELS
