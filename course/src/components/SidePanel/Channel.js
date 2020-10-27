@@ -8,7 +8,7 @@ export default class Channel extends Component {
     
 
     render() {
-        const { channels } = this.state
+        const { channels } = this.state;
 
         return (
             <Menu.menu>
@@ -16,6 +16,7 @@ export default class Channel extends Component {
                     <span>
                         <Icon name="exchange"/> CHANNELS
                     </span>
+                    ({ channels.length }) <Icon name="add"/>
                 </Menu.Item>
             </Menu.menu>
         )
