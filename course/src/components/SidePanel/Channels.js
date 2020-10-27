@@ -11,14 +11,14 @@ export default class Channels extends Component {
         const { channels } = this.state;
 
         return (
-            <Menu.menu>
+            <Menu.Menu>
                 <Menu.Item>
                     <span>
                         <Icon name="exchange"/> CHANNELS
                     </span>{ " " }
                     ({ channels.length }) <Icon name="add"/>
                 </Menu.Item>
-            </Menu.menu>
+            </Menu.Menu>
         )
     }
 }
