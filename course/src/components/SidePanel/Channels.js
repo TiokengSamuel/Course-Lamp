@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Icon, Menu } from 'semantic-ui-react'
+import { Icon, Menu, Modal } from 'semantic-ui-react'
 
 export default class Channels extends Component {
     state = {
@@ -22,7 +22,7 @@ export default class Channels extends Component {
             </Menu.Menu>
 
             <Modal basic open={}>
-
+                
             </Modal>
         )
     }
