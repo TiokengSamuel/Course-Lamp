@@ -7,7 +7,7 @@ export default class Channel extends Component {
             <Menu.menu>
                 <Menu.Item>
                     <span>
-                        <Icon/>
+                        <Icon name="exchange"/> CHANNELS
                     </span>
                 </Menu.Item>
             </Menu.menu>
