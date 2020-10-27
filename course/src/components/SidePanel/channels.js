@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Icon, Menu } from 'semantic-ui-react'
 
-export default class Channel extends Component {
+export default class Channels extends Component {
     state = {
         channels: []
     }
