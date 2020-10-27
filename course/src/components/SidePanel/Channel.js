@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 export default class Channel extends Component {
     render() {
         return (
-            
+            <Menu.menu>
+                
+            </Menu.menu>
         )
     }
 }
