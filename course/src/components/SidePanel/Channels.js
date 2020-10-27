@@ -3,7 +3,8 @@ import { Icon, Menu } from 'semantic-ui-react'
 
 export default class Channels extends Component {
     state = {
-        channels: []
+        channels: [],
+        modal: false
     }
     
 
