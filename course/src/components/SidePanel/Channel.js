@@ -8,6 +8,8 @@ export default class Channel extends Component {
     
 
     render() {
+        const { channels } = this.state
+
         return (
             <Menu.menu>
                 <Menu.Item>
