@@ -9,7 +9,7 @@ export default class Channels extends Component {
     
 
     render() {
-        const { channels } = this.state;
+        const { channels, modal } = this.state;
 
         return (
             <Menu.Menu style={{ paddingBottom: '2em' }}>
