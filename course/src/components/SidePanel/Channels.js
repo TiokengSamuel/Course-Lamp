@@ -14,6 +14,7 @@ export default class Channels extends Component {
         const { channels, modal } = this.state;
 
         return (
+            <div>
             <Menu.Menu style={{ paddingBottom: '2em' }}>
                 <Menu.Item>
                     <span>
@@ -22,10 +23,12 @@ export default class Channels extends Component {
                     ({ channels.length }) <Icon name="add"/>
                 </Menu.Item>
             </Menu.Menu>
-
-            <Modal basic open={modal} onClose = { this.closeModal }>
+            
+                <Modal basic open={modal} onClose = { this.closeModal }>
                 
-            </Modal>
+                </Modal>
+            
+            </div>  
         )
     }
 }
