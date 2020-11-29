@@ -24,6 +24,7 @@ export default class Channels extends Component {
                 </Menu.Item>
             </Menu.Menu>
             
+                // Add Channel
                 <Modal basic open={modal} onClose = { this.closeModal }>
                 
                 </Modal>
