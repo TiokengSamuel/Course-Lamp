@@ -26,6 +26,15 @@ export default class Channels extends Component {
                 avatar: user.photoURL
             }
         }
+
+        channelsRef
+            .child(key)
+            .update(newChannel)
+            .then(() => {
+                this.setState({ channelName: '', channelDetails: ''});
+                this.closeModal();
+                console.log(''channel added)
+            })
     }
 
     handleSubmit = event => {
