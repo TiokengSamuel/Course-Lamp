@@ -25,7 +25,7 @@ export default class Channels extends Component {
                 name: user.displayName, 
                 avatar: user.photoURL
             }
-        }
+        };
 
         channelsRef
             .child(key)
