@@ -44,6 +44,16 @@ export default class Channels extends Component {
                                 >
                                 </Input>
                             </Form.Field>
+
+                            <Form.Field>
+                                <Input
+                                fluid
+                                labael="About Channel"
+                                name="ChannelDeatails"
+                                onChange={this.handleChange}
+                                >
+                                </Input>
+                            </Form.Field>
                         </Form>
                     </Modal.Content>
                 </Modal>
