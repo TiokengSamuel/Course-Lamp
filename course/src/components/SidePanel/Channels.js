@@ -7,6 +7,10 @@ export default class Channels extends Component {
         modal: false
     }
 
+    handleChange = event => {
+        this
+    }
+
     closeModal = () => this.setState({ modal: false});
     
 
