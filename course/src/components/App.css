@@ -7,9 +7,9 @@ body,
 }
 
 .modal {
-    height: auto;
-    top: auto;
-    left: auto;
-    bottom: auto;
-    right: auto;
+    height: auto !important;
+    top: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    right: auto !important;
 }
