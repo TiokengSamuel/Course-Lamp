@@ -56,6 +56,10 @@ export default class Channels extends Component {
                             </Form.Field>
                         </Form>
                     </Modal.Content>
+
+                    <Modal.Actions>
+                        
+                    </Modal.Actions>
                 </Modal>
             
             </div>  
