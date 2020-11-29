@@ -9,9 +9,18 @@ export default class Channels extends Component {
         modal: false
     }
 
+    handleSubmit = event => {
+        event.preventDefault();
+        if (this.isFormValid(this.state)) {
+            console.log('channel added');
+        }
+    }
+
     handleChange = event => {
         this.setState ({[event.target.name]: event.target.value });
     }
+
+    isFormValid = ({ channelName, channelDetails }) => channelName && channelDetails;
 
     openModal = () => this.setState({ modal: true});
 
@@ -36,7 +45,7 @@ export default class Channels extends Component {
                 <Modal basic open={modal} onClose = { this.closeModal } className = "modal">
                     <Modal.Header>Add a Channel</Modal.Header>
                     <Modal.Content>
-                        <Form>
+                        <Form onSubmit={this.handleSubmit}>
                             <Form.Field>
                                 <Input
                                 fluid
@@ -60,7 +69,7 @@ export default class Channels extends Component {
                     </Modal.Content>
 
                     <Modal.Actions>
-                        <Button color="green" inverted>
+                        <Button color="green" inverted onClick={this.handleSubmit}>
                             <Icon name="checkmark" /> Add
                         </Button>
                         <Button color="red" inverted onClick = {this.closeModal}>
