@@ -35,6 +35,9 @@ export default class Channels extends Component {
                 this.closeModal();
                 console.log('channel added');
             })
+            .catch(err => {
+                console.error(err)
+            })
     }
 
     handleSubmit = event => {
