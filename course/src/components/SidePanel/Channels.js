@@ -27,11 +27,11 @@ export default class Channels extends Component {
                     <span>
                         <Icon name="exchange"/> CHANNELS
                     </span>{ " " }
-                    ({ channels.length }) <Icon name="add"/>
+                    ({ channels.length }) <Icon name="add" onClick={this.openModal}/>
                 </Menu.Item>
             </Menu.Menu>
             
-                // Add Channel
+                {/* Add Channel */}
                 <Modal basic open={modal} onClose = { this.closeModal }>
                     <Modal.Header>Add a Channel</Modal.Header>
                     <Modal.Content>
