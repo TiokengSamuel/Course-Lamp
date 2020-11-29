@@ -13,6 +13,8 @@ export default class Channels extends Component {
         this.setState ({[event.target.name]: event.target.value });
     }
 
+    openModal = () => this.setState({ modal: true});
+
     closeModal = () => this.setState({ modal: false});
     
 
