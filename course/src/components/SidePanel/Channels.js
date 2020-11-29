@@ -33,7 +33,7 @@ export default class Channels extends Component {
             .then(() => {
                 this.setState({ channelName: '', channelDetails: ''});
                 this.closeModal();
-                console.log(''channel added)
+                console.log('channel added');
             })
     }
 
