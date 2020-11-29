@@ -33,7 +33,7 @@ export default class Channels extends Component {
             </Menu.Menu>
             
                 {/* Add Channel */}
-                <Modal basic open={modal} onClose = { this.closeModal }>
+                <Modal basic open={modal} onClose = { this.closeModal } className = "modal">
                     <Modal.Header>Add a Channel</Modal.Header>
                     <Modal.Content>
                         <Form>
