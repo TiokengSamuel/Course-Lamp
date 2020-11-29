@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Icon, Menu, Modal, Form, Input } from 'semantic-ui-react'
+import { Icon, Menu, Modal, Form, Input, Button } from 'semantic-ui-react'
 
 export default class Channels extends Component {
     state = {
@@ -58,7 +58,9 @@ export default class Channels extends Component {
                     </Modal.Content>
 
                     <Modal.Actions>
-                        
+                        <Button color="green" inverted>
+                            <Icon name="checkmark" /> Add
+                        </Button>
                     </Modal.Actions>
                 </Modal>
             
