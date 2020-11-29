@@ -23,7 +23,6 @@ export default class Channels extends Component {
 
         return (
             <React.Fragment>
-            <div>
             <Menu.Menu style={{ paddingBottom: '2em' }}>
                 <Menu.Item>
                     <span>
@@ -41,8 +40,8 @@ export default class Channels extends Component {
                             <Form.Field>
                                 <Input
                                 fluid
-                                labael="Name of Channel"
-                                name="ChannelName"
+                                label="Name of Channel"
+                                name="channelName"
                                 onChange={this.handleChange}
                                 >
                                 </Input>
@@ -51,8 +50,8 @@ export default class Channels extends Component {
                             <Form.Field>
                                 <Input
                                 fluid
-                                labael="About Channel"
-                                name="ChannelDeatails"
+                                label="About Channel"
+                                name="channelDetails"
                                 onChange={this.handleChange}
                                 >
                                 </Input>
@@ -69,8 +68,6 @@ export default class Channels extends Component {
                         </Button>
                     </Modal.Actions>
                 </Modal>
-            
-            </div>  
             </React.Fragment>
         )
     }
