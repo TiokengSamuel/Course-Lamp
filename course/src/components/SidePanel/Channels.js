@@ -13,7 +13,7 @@ export default class Channels extends Component {
     }
 
     addChannel = () => {
-        const { channelsRef, channelName, channelDetails } = this.state;
+        const { channelsRef, channelName, channelDetails, user } = this.state;
 
         const key = channelsRef.push().key;
 
@@ -22,7 +22,8 @@ export default class Channels extends Component {
             name: channelName,
             details: channelDetails,
             createdBy: {
-                name: 
+                name: user.displayName, 
+                avatar: user.photoURL
             }
         }
     }
