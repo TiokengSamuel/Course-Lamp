@@ -43,7 +43,6 @@ export default class Channels extends Component {
     handleSubmit = event => {
         event.preventDefault();
         if (this.isFormValid(this.state)) {
-            console.log('Channel added')
             this.addChannel();
         }
     }
