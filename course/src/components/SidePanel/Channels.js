@@ -20,6 +20,7 @@ export default class Channels extends Component {
         const { channels, modal } = this.state;
 
         return (
+            <React.Fragment>
             <div>
             <Menu.Menu style={{ paddingBottom: '2em' }}>
                 <Menu.Item>
@@ -62,12 +63,13 @@ export default class Channels extends Component {
                             <Icon name="checkmark" /> Add
                         </Button>
                         <Button color="red" inverted>
-                            <Icon name="remove" /> Add
+                            <Icon name="remove" /> Cancel
                         </Button>
                     </Modal.Actions>
                 </Modal>
             
             </div>  
+            </React.Fragment>
         )
     }
 }
