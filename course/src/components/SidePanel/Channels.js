@@ -5,7 +5,7 @@ export default class Channels extends Component {
     state = {
         channels: [],
         channelName: '',
-        channelDetail: '',
+        channelDetails: '',
         modal: false
     }
 
