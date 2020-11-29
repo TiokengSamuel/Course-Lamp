@@ -43,8 +43,8 @@ export default class Channels extends Component {
                                 label="Name of Channel"
                                 name="channelName"
                                 onChange={this.handleChange}
-                                >
-                                </Input>
+                                />
+                                
                             </Form.Field>
 
                             <Form.Field>
@@ -53,8 +53,8 @@ export default class Channels extends Component {
                                 label="About Channel"
                                 name="channelDetails"
                                 onChange={this.handleChange}
-                                >
-                                </Input>
+                                />
+                                
                             </Form.Field>
                         </Form>
                     </Modal.Content>
