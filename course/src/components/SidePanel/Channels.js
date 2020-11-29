@@ -61,6 +61,9 @@ export default class Channels extends Component {
                         <Button color="green" inverted>
                             <Icon name="checkmark" /> Add
                         </Button>
+                        <Button color="green" inverted>
+                            <Icon name="checkmark" /> Add
+                        </Button>
                     </Modal.Actions>
                 </Modal>
             
