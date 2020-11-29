@@ -4,6 +4,7 @@ import firebase from '../../Firebase';
 
 export default class Channels extends Component {
     state = {
+        user: this.props.currentUser,
         channels: [],
         channelName: '',
         channelDetails: '',
@@ -12,7 +13,18 @@ export default class Channels extends Component {
     }
 
     addChannel = () => {
-        const { channelsRef } = this.state;
+        const { channelsRef, channelName, channelDetails } = this.state;
+
+        const key = channelsRef.push().key;
+
+        const newChannel = {
+            id: key,
+            name: channelName,
+            details: channelDetails,
+            createdBy: {
+                name: 
+            }
+        }
     }
 
     handleSubmit = event => {
