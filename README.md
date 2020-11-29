@@ -1,2 +1,2 @@
-# Course-Lamp
-v 1.0
+# Dev-Chat
+This is a fully functional web application for developers to chat on
