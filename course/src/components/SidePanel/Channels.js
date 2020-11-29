@@ -4,11 +4,13 @@ import { Icon, Menu, Modal, Form, Input } from 'semantic-ui-react'
 export default class Channels extends Component {
     state = {
         channels: [],
+        channelName: '',
+        channelDetail: '',
         modal: false
     }
 
     handleChange = event => {
-        this
+        this.setState ({[event.target.name]: event.target.value });
     }
 
     closeModal = () => this.setState({ modal: false});
