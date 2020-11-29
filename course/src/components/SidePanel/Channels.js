@@ -28,7 +28,17 @@ export default class Channels extends Component {
                 <Modal basic open={modal} onClose = { this.closeModal }>
                     <Modal.Header>Add a Channel</Modal.Header>
                     <Modal.Content>
-                        
+                        <Form>
+                            <Form.Field>
+                                <Input
+                                fluid
+                                labael="Name of Channel"
+                                name="ChannelName"
+                                onChange={this.handleChange}
+                                >
+                                </Input>
+                            </Form.Field>
+                        </Form>
                     </Modal.Content>
                 </Modal>
             
