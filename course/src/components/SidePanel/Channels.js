@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
 import { Icon, Menu, Modal, Form, Input, Button } from 'semantic-ui-react'
+import firebase from '../../firebase';
 
 export default class Channels extends Component {
     state = {
         channels: [],
         channelName: '',
         channelDetails: '',
+        channelsRef: firebase.database().ref('channels')
         modal: false
+    }
+
+    addChannel = () => {
+
     }
 
     handleSubmit = event => {
