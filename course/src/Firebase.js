@@ -3,7 +3,7 @@ import "firebase/auth"
 import "firebase/database"
 import "firebase/storage"
 
-
+// CourseLamp database
 var firebaseConfig = {
     apiKey: "AIzaSyCyReey4db3UJrqYIaQwC72jsaip823aJ4",
     authDomain: "course-lamp-v-1-0.firebaseapp.com",
