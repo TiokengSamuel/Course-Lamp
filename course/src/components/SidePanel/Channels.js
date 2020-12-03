@@ -12,6 +12,17 @@ export default class Channels extends Component {
         modal: false
     }
 
+    componentDidMount() {
+        this.addListetners();
+    }
+
+    addListeners = () => {
+        let loadedChannels = [];
+        this.state.channelsRef.on('child_added', snap => {
+            loadedChannels.
+        })
+    }
+
     addChannel = () => {
         const { channelsRef, channelName, channelDetails, user } = this.state;
 
