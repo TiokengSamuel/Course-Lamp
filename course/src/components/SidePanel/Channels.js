@@ -13,7 +13,7 @@ export default class Channels extends Component {
     }
 
     componentDidMount() {
-        this.addListetners();
+        this.addListeners();
     }
 
     addListeners = () => {
