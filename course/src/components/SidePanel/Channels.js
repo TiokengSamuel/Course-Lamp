@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { setCurrentChannel } from '../../actions'
 import firebase from '../../Firebase';
 
-export default class Channels extends Component {
+class Channels extends Component {
     state = {
         user: this.props.currentUser,
         channels: [],
@@ -149,3 +149,5 @@ export default class Channels extends Component {
         )
     }
 }
+
+export default connect(null, { setCurrentChannel }(Channels));
