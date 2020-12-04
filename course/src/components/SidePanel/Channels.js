@@ -60,7 +60,9 @@ export default class Channels extends Component {
     }
 
     handleChange = event => {
-        this.setState ({[event.target.name]: event.target.value }
+        this.setState ({[event.target.name]: event.target.value })
+
+    };
 
     displayChannels = channels => (
         channels.lenghth > 0 && channels.map(channel => (
