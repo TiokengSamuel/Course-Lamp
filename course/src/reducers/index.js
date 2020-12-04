@@ -24,7 +24,9 @@ const user_reducer = (state = initialUserState, action) => {
     }
 }
 
-const channel_reducer =
+const channel_reducer = (state, action) = {
+    
+}
 
 const rootReducer = combineReducers({
     user: user_reducer
