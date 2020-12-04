@@ -65,7 +65,8 @@ export default class Channels extends Component {
     };
 
     displayChannels = channels => 
-        channels.lenghth > 0 && channels.map(channel => (
+        channels.lenghth > 0 && 
+        channels.map(channel => (
             <Menu.Item
             
             key={channel.id}
