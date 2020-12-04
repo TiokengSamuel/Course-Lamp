@@ -28,7 +28,7 @@ const initialChannelState = {
     currentChannel: null
 }
 
-const channel_reducer = (state , action) = {
+const channel_reducer = (state = initialChannelState, action) = {
 
 }
 
