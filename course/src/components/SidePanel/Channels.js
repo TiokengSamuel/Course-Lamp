@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Icon, Menu, Modal, Form, Input, Button } from 'semantic-ui-react'
 import { connect } from 'react-redux';
+import { setCurrentChannel } from '../../actions'
 import firebase from '../../Firebase';
 
 export default class Channels extends Component {
