@@ -64,7 +64,7 @@ export default class Channels extends Component {
 
     };
 
-    displayChannels = channels => (
+    displayChannels = channels => 
         channels.lenghth > 0 && channels.map(channel => (
             <Menu.Item
             
@@ -74,11 +74,11 @@ export default class Channels extends Component {
             style= {{ opacity: 0.7 }}
             >
 
+              # {channel.name}  
 
             </Menu.Item>
 
         ))
-    )
 
     isFormValid = ({ channelName, channelDetails }) => channelName && channelDetails;
 
