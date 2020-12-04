@@ -75,7 +75,7 @@ export default class Channels extends Component {
             style= {{ opacity: 0.7 }}
             >
 
-              # {channel.name}  
+              {channel.name}  
 
             </Menu.Item>
 
