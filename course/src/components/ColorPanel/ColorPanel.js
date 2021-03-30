@@ -4,7 +4,7 @@ import { Sidebar, Menu, Divider, Button} from 'semantic-ui-react'
 export default class ColorPanel extends Component {
     render() {
         return (
-            <SideBar
+            <Sidebar
                 as = {Menu}
                 icon = "labeled"
                 inverted vertical visible
@@ -13,7 +13,7 @@ export default class ColorPanel extends Component {
                 <Divider />
                 <Button icon= "add" size="small" color="blue"/>
 
-            </SideBar>
+            </Sidebar>
         )
     }
 }
