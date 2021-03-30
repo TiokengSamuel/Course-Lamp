@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Segment, Button, Input } from 'semantic-ui-react'
 
-class MessageForm extends React.component {
+export default class MessageForm extends Component {
     render() {
         return(
             <Segment className = "message__form">
@@ -34,4 +34,4 @@ class MessageForm extends React.component {
     }
 }
 
-export default MessageForm
+
