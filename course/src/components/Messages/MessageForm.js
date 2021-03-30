@@ -6,6 +6,7 @@ export default class MessageForm extends Component {
     state = {
         message: '',
         channel: this.props.currentChannel,
+        user: this.props.currentUser,
         laoding: false
     }
 

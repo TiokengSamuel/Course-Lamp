@@ -19,6 +19,8 @@ const App = ({ currentUser, currentChannel }) => (
       <Messages
         key={currentChannel && currentChannel.id}
         currentChannel={currentChannel}
+        currentUser={currentUser}
+
       />
     </Grid.Column>
     
