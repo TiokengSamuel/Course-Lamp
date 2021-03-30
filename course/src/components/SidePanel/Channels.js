@@ -6,6 +6,7 @@ import firebase from '../../Firebase';
 
 class Channels extends Component {
     state = {
+        activeChannel: "",
         user: this.props.currentUser,
         channels: [],
         channelName: '',
@@ -28,7 +29,13 @@ class Channels extends Component {
     }
 
     setFirstChannel = () => {
+        const firstChannel = this.state.channels[0];
+        if(this.state.firestLoad && this.state.channels.length > 0) {
+            this.props.setCurrentChannel(firstChannel)
+            this.setActiveChannel(firstChannel);
+        }
 
+        this.setState({firstload: false});
     }
 
     addChannel = () => {
@@ -72,7 +79,12 @@ class Channels extends Component {
     };
 
     changeChannel = channel => {
+        this.setActiveChannel(channel);
         this.props.setCurrentChannel(channel);
+    }
+
+    setActiveChannel = channel => {
+        this.setState({ activeChannel: channel.id});
     }
 
     displayChannels = channels => 
@@ -84,6 +96,7 @@ class Channels extends Component {
             onClick={() =>  this.changeChannel(channel)}
             name = {channel.name}
             style= {{ opacity: 0.7 }}
+            active={channel.id === this.state.activeChannel}
             >
 
              # {channel.name}  
