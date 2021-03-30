@@ -6,11 +6,12 @@ import firebase from '../../Firebase'
 
 export default class Messages extends Component {
    state = {
-       messagesRef: firebase.database().ref('messages')
+       messagesRef: firebase.database().ref('messages'),
+       channel: this.props.currentChannel
    } 
     
     render() {
-        const { messagesRef } = this.state;
+        const { messagesRef, channel } = this.state;
 
 
         return (
@@ -25,6 +26,7 @@ export default class Messages extends Component {
 
                 <MessageForm
                  messagesRef={messagesRef}
+                 currentChannel={channel}
                 />
             </React.Fragment>
         )

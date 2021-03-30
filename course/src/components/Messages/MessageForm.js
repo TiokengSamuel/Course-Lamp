@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import { Segment, Button, Input } from 'semantic-ui-react'
+import firebase from '../../Firebase'
 
 export default class MessageForm extends Component {
     state = {
         message: '',
+        channel: this.props.currentChannel,
         laoding: false
     }
 
@@ -11,14 +13,23 @@ export default class MessageForm extends Component {
         this.setState({ [event.target.name]: event.target.value})
     }
 
+    createMessage = () => {
+        const message = {
+            timestamp: firebase.dataase.ServerValue.TIMESTAMP,
+            content: this.state.message
+        }
+    }
+
     sendMessage = () => {
         const { messagesRef } = this.props;
-        const { message } = this.state;
+        const { message, channel } = this.state;
 
         if (message) {
             this.setState({ loading: true});
             messagesRef
-                .child(channelId)
+                .child(channel.id)
+                .push()
+                .set(this.createMessage())
         }
     }
 
