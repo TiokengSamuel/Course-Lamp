@@ -3,7 +3,8 @@ import { Segment, Button, Input } from 'semantic-ui-react'
 
 export default class MessageForm extends Component {
     state = {
-        message: ''
+        message: '',
+        laoding: false
     }
 
     handleChange = event => {
@@ -17,6 +18,7 @@ export default class MessageForm extends Component {
         if (message) {
             this.setState({ loading: true});
             messagesRef
+                .child(channelId)
         }
     }
 
