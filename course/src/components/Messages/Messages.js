@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Segment, Comment } from 'semantic-ui-react'
+import { Segment, Comment } from 'semantic-ui-react' 
+import MessagesHeader from './MessagesHeader'
 
 export default class Messages extends Component {
     render() {
