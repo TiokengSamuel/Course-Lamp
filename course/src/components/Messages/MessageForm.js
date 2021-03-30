@@ -1,8 +1,7 @@
 import React from 'react'
 import { Segment, Button, Input } from 'semantic-ui-react'
 
-
-class MessageForm extends React.Component {
+class MessageForm extends React.component {
     render() {
         return(
             <Segment className = "message__form">
@@ -26,7 +25,7 @@ class MessageForm extends React.Component {
                         color="teal"
                         content="Upload Media"
                         labelPosition="right"
-                        icon="cloud"
+                        icon="cloud upload"
                     />
                 </Button.Group>
 
@@ -35,4 +34,4 @@ class MessageForm extends React.Component {
     }
 }
 
-export default MessageForm;
+export default MessageForm
