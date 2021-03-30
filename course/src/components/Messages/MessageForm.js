@@ -49,7 +49,7 @@ export default class MessageForm extends Component {
                     })
                 })
         } else {
-            this.state({
+            this.setState({
                 errors: this.state.errors.concat({ message: 'Add a message' })
             })
         }
