@@ -7,7 +7,8 @@ export default class MessageForm extends Component {
         message: '',
         channel: this.props.currentChannel,
         user: this.props.currentUser,
-        laoding: false
+        laoding: false,
+        errors: []
     }
 
     handleChange = event => {
@@ -17,8 +18,15 @@ export default class MessageForm extends Component {
     createMessage = () => {
         const message = {
             timestamp: firebase.dataase.ServerValue.TIMESTAMP,
+            user: {
+                id: this.state.user.uid,
+                name: this.state.user.displayName,
+                avatar: this.state.user.photoURL
+            },
             content: this.state.message
         }
+
+        return message
     }
 
     sendMessage = () => {
@@ -31,10 +39,24 @@ export default class MessageForm extends Component {
                 .child(channel.id)
                 .push()
                 .set(this.createMessage())
+                .then(() => {
+                    this.setState({ loading: false, message: '', errors: []})
+                })
+                .catch(err => {
+                    console.error(err);
+                    this.setState({
+                        errors: this.state.concat(err)
+                    })
+                })
+        } else {
+            this.state({
+                errors: this.state.errors.concat({ message: 'Add a message' })
+            })
         }
     }
 
     render() {
+        const { errors } = this.state;
         return(
             <Segment className = "message__form">
                 <Input
@@ -44,6 +66,9 @@ export default class MessageForm extends Component {
                 style={{ marginBottom: '0.7em'}}
                 label={<Button icon={'add'} />}
                 labelPosition="left"
+                className={
+                    errors.some(error => error.message.includes('message')) ? 'error' : ''
+                }
                 placeholder="Write your message"
                 />
 
