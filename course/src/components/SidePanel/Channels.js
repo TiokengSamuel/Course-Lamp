@@ -11,7 +11,8 @@ class Channels extends Component {
         channelName: '',
         channelDetails: '',
         channelsRef: firebase.database().ref('channels'),
-        modal: false
+        modal: false,
+        firstLoad: true,
     }
 
     componentDidMount() {
@@ -22,8 +23,12 @@ class Channels extends Component {
         let loadedChannels = [];
         this.state.channelsRef.on('child_added', snap => {
             loadedChannels.push(snap.val());
-            this.setState({ channels: loadedChannels });
+            this.setState({ channels: loadedChannels }, this.setFirstChannel());
         })
+    }
+
+    setFirstChannel = () => {
+
     }
 
     addChannel = () => {
